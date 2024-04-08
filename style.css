@@ -1,0 +1,332 @@
+*
+{
+    margin: 0;
+}
+.topbar
+{
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 75%;
+}
+.topbar a
+{
+    text-decoration: none;
+    color: black;
+}
+.topbar a:hover
+{
+    color: rgb(240, 145, 11);
+
+}
+.topbar li
+{
+    padding-left: 50px;
+}
+.topbar li img
+{
+    width:10px;
+}
+
+.header
+{
+    position: sticky;
+    background: rgba(255, 255, 255,0.8);
+    /* scroll xuon nhg van con header */
+    top: 0;
+    left: 0;
+    /* tao do trong suot va hien thi header tren hinh */
+    z-index: 5;
+    height: 60px;
+    width: 100%; 
+}
+.info
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-left:80px;
+    font-size: 100%;
+    letter-spacing: 0.4px;
+}
+.header li a
+{
+    color: black;
+    text-decoration: none;
+
+}
+.header li
+{
+    margin-top:15px;
+    margin-left: 20px;
+}
+.header .info a:hover
+{
+    color:rgb(240, 145, 11) ;
+}
+.info .menuchild
+{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.926);
+    padding-top:1% ;
+    top: 100%;
+}
+.menuchild .child
+{
+    width: 7%;
+    margin: 0 0.5%;
+    list-style: none;
+}
+#menu2.menuchild .child
+{
+    width: 25%;
+    margin: 0 1.6%;
+    list-style: none;
+}
+.menuchild .child .child1
+{
+    border-top: 3px solid black;
+}
+.menuchild .child .child1 li
+{
+    list-style: none;
+    position: relative;
+    right: 55px;
+    padding-bottom: 20px;
+}
+.menuchild .child .child1 li a
+{
+    font-size: 90%;
+    color: rgb(117, 115, 115);
+}
+.menuchild .child .child1 li a:hover
+{
+    color:rgb(240, 145, 11) ;
+}
+.haschild
+{
+    padding-bottom: 30px;
+}
+.haschild:hover >.menuchild
+{
+    display: initial;
+    display: flex;
+}
+.child a
+{
+    font-size: 120%;
+    font-weight: 700;
+}
+.logo img
+{
+    display: block;
+    width: 170px;
+    margin-right: auto;
+    position: absolute;
+    margin-left: 20em;
+    top: -30px;
+}
+
+/* di chuyen anh len tren header */
+.hinh
+{
+    transform: translateY(-60px);
+    position: relative;
+}
+
+.fade 
+{
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+
+.menu
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 1%;
+}
+.banner img
+{
+    width: 100%;
+}
+.banner
+{
+    width: 40%;
+    padding-right: 50px;
+}
+.mon
+{
+    width: 20%;
+    margin: 0 2% 4%;
+    justify-content: center;
+}
+.mon img
+{
+    width: 90%;
+    box-shadow: 1px 1px 30px 1px #b3b1b1;
+}
+.menu p > a
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 90%;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+}
+.menu a:hover
+{
+    color:rgb(240, 145, 11);
+}
+
+.banner2 img
+{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.banner2 .chu p
+{
+    width: 37%;
+    font-size: 100%;
+    position: relative;
+    margin: -20% 51%;
+    z-index: 2;
+    background-color: #FFF;
+}
+
+.nut a
+{
+    z-index: 2;
+    width: 30%;
+    padding-left: 32%;
+    padding-right: 32%;
+    border-radius: 10px;
+    background-color:rgb(68, 142, 68);
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 120%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.nut
+{
+    position: relative;
+    margin-top: 22%;
+    margin-left: 51%;
+}
+
+.footer
+{
+    background-color: rgb(59, 58, 58);
+    height: fit-content;
+    margin-top: 10em;
+}
+.noidung
+{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0 0.6%;
+    padding-bottom: 1em;
+}
+.noidung .gioithieu
+{
+    width: 30%;
+    color: #FFF;
+    font-weight: 600;
+}
+.noidung .gioithieu ul li
+{
+    list-style: none;
+    line-height: 25px;
+    font-size: 80%;
+}
+
+.noidung .gioithieu ul li a
+{
+    text-decoration: none;
+    color: rgb(224, 221, 221);
+}
+.noidung .khac 
+{
+    width: 30%;
+    font-size: 80%;
+}
+.noidung .khac img
+{
+    width:10px;
+}
+.noidung .khac ul
+{
+    position: relative;
+    right:  40px;
+    font-size: 120%;
+    padding-bottom: 20px;
+    color: rgb(238, 233, 233);
+}
+.noidung .khac .lienhe
+{
+    font-weight: 400;
+    line-height: 40px;
+    color: #FFF;
+}
+
+
+.noidung .gioithieu ul
+{
+    padding-top: 20px;
+    position: relative;
+    right: 40px;
+}
+.noidung .dieukhoan
+{
+    width:30% ;
+    color: #FFF;
+    font-weight: 600;
+}
+.noidung .dieukhoan ul
+{
+    list-style: none;
+    padding-top: 20px;
+    position: relative;
+    right: 40px;
+    line-height: 25px;
+    font-size: 80%;
+}
+
+.noidung .dieukhoan ul li a
+{
+    text-decoration: none;
+    color: rgb(238, 233, 233);
+}
+.thongtin
+{
+    border-top: 1px solid white;
+    width: 80%;
+    position: relative;
+    left: 50px;
+    padding-bottom: 3em;
+}
+.thongtin p
+{
+    position: relative;
+    right: 40px;
+    font-size: 90%;
+    color: rgb(204, 202, 202);
+}
+.thongtin ul
+{
+    padding-top: 20px;
+}

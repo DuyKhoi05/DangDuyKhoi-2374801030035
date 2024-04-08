@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee House</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="topbar">
+        <li><img src="/image/location-dot-solid.svg" alt="">
+            <a href="">149 Cua Hang Khap ca nuoc</a></li>
+        <li><img src="/image/phone-solid.svg" alt="">
+           <a href="#">Dat Hang: 1800.6936</a></li>
+    </div>
+    <div class="header">
+        <div class="logo">
+            <img src="/image/The-Coffee-House-Logo-PNG-2.png" alt="">
+        </div>
+        <div class="info">
+            <li><a href="">Cà Phê</a></li>
+            <li><a href="">Trà</a></li>
+            <li class="haschild"><a href="">Menu ↓</a>
+              <ul class="menuchild" id="menu1">
+                <li class="child">
+                  <a href="#">Tất Cả</a>
+                  <ul class="child1"></ul>
+                </li>
+                <li class="child">
+                  <a href="#">Cà Phê</a>
+                  <ul class="child1">
+                    <li><a href="#">Cà Phê Highlight</a></li>
+                    <li><a href="#">Cà Phê Việt Nam</a></li>
+                    <li><a href="#">Cà Phê Máy</a></li>
+                    <li><a href="#">Cold Brew</a></li>
+                  </ul>
+                </li>
+                <li class="child">
+                  <a href="#">Trà</a>
+                  <ul class="child1">
+                    <li><a href="#">Trà Trái Cây</a></li>
+                    <li><a href="#">Macchiato</a></li>
+                  </ul>
+                </li>
+                <li class="child">
+                  <a href="#">Cloud</a>
+                  <ul class="child1">
+                    <li><a href="#">CloudTea</a></li>
+                    <li><a href="#">CloudFee</a></li>
+                  </ul>
+                </li>
+                <li class="child">
+                  <a href="#">Hi-Tea Healthy</a>
+                  <ul class="child1">
+                    <li><a href="#">Hi-Tea Trà</a></li>
+                    <li><a href="#">Hi-Tea Đá Tuyết</a></li>
+                  </ul>
+                </li>
+                <li class="child">
+                  <a href="#">Trà Xanh - Sô cô la</a>
+                  <ul class="child1">
+                    <li><a href="#">Trà Xanh Tây Bắc</a></li>
+                    <li><a href="#">Sô Cô La</a></li>
+                  </ul>
+                </li>
+                <li class="child">
+                  <a href="#">Thức uống đá xay</a>
+                  <ul class="child1">
+                    <li><a href="#">Đá Xay Frosty</a></li>
+                  </ul>
+                </li>
+                <li class="child">
+                  <a href="#">Bánh & Snack</a>
+                  <ul class="child1">
+                    <li><a href="#">Bánh Mặn</a></li>
+                    <li><a href="#">Bánh Ngọt</a></li>
+                    <li><a href="#">Snack</a></li>
+                    <li><a href="#">Bánh Pastry</a></li>
+                  </ul>
+                </li>
+                <li class="child">
+                  <a href="#">Thưởng Thức Tại Nhà</a>
+                  <ul class="child1">
+                    <li><a href="#">Cà Phê Tại Nhà</a></li>
+                    <li><a href="#">Trà Tại Nhà</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="haschild"><a href="">Chuyện Nhà ↓</a>
+              <ul class="menuchild" id="menu2">
+                <li class="child">
+                  <a href="#">Coffeeholic</a>
+                  <ul class="child1">
+                    <li><a href="#">#chuyencaphe</a></li>
+                    <li><a href="#">#phacaphe</a></li>
+                  </ul>
+                </li>
+                <li class="child">
+                  <a href="#">Teaholic</a>
+                  <ul class="child1">
+                    <li><a href="#">#phatra</a></li>
+                    <li><a href="#">#cautruyenvetra</a></li>
+                  </ul>
+                </li>
+                <li class="child">
+                  <a href="#">Blog</a>
+                  <ul class="child1">
+                    <li><a href="#">#inthemood</a></li>
+                    <li><a href="#">#Review</a></li>
+                    <li><a href="#">#HumanofTCH</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="">Cảm Hứng CloundFee</a></li>
+            <li><a href="">Cửa Hàng</a></li>
+        </div>
+    </div>
+
+            <div class="main">
+              <div class="hinh">
+
+                <div class="mySlides fade">
+                  <img src="/image/slide1.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="/image/slide2.webp" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="/image/slide3.webp" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="/image/slide4.webp" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="/image/slide5.webp" style="width:100%">
+                  </div>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                  </div>
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    </script>
+
+
+              <div class="menu">
+                <div class="banner">
+                    <img src="/image/tra xanh tay bac.webp" alt="">
+                </div>
+                  <div class="mon ">
+                    <img src="/image/ly 1.webp" alt="">
+                    <p><a href="">CloundFee Hạnh Nhân Nướng</a></p>
+                    <p>49.000 đ</p>
+                  </div>
+                  <div class="mon">
+                    <img src="/image/ly 2.webp" alt="">
+                    <p><a href="">The Coffee House Sữa Đá</a></p>
+                    <p>39.000 đ</p>
+                  </div>
+                  <div class="mon">
+                    <img src="/image/ly 3.webp" alt="">
+                    <p><a href="">Hi-Tea Vải</a></p>
+                    <p>49.000 đ</p>
+                  </div>
+                  <div class="mon">
+                    <img src="/image/ly 4.webp" alt="">
+                    <p><a href="">Cà Phê Sữa Đá</a></p>
+                    <p>29.000 đ</p>
+                  </div>
+                  <div class="mon">
+                    <img src="/image/mon 5.webp" alt="">
+                    <p><a href="">Bánh Mì VN Thịt Nguội</a></p>
+                    <p>39.000 đ</p>
+                  </div>
+                  <div class="mon">
+                    <img src="/image/mon 6.webp" alt="">
+                    <p><a href="">Mochi Kem chocolate</a></p>
+                    <p>19.000 đ</p>
+                  </div>
+
+                </div>
+            </div>
+
+            <div class="banner2">
+              <img src="/image/tra xanh tay bac 2.png" alt="">
+              <div class="chu">
+                <p>Được trồng trọt và chăm chút kỹ lưỡng, nuôi dưỡng từ thổ nhưỡng phì nhiêu, 
+                  nguồn nước mát lành, bao bọc bởi mây và sương cùng nền nhiệt độ mát mẻ quanh năm, 
+                  những búp trà ở Tây Bắc mập mạp và xanh mướt, hội tụ đầy đủ dưỡng chất, sinh khí, và tinh hoa đất trời. 
+                  Chính khí hậu đặc trưng cùng phương pháp canh tác của đồng bào dân tộc nơi đây đã tạo ra Trà Xanh vị mộc dễ uống,
+                   dễ yêu, không thể trộn lẫn với bất kỳ vùng miền nào khác.</p>
+                   <div class="nut">
+                     <a href="">Thử Ngay</a>
+                   </div>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="noidung">
+
+                <div class="gioithieu">
+                  <p>Giới Thiệu</p>
+                  <ul>
+                    <li><a href="">Về chúng tôi</a></li>
+                    <li><a href="">Sản phẩm</a></li>
+                    <li><a href="">Khuyến mãi</a></li>
+                    <li><a href="">Chuyện cà phê</a></li>
+                    <li><a href="">Cửa Hàng</a></li>
+                    <li><a href="">Tuyển dụng</a></li>
+                  </ul>
+                </div>
+                <div class="dieukhoan">
+                  <p>Điều Khoản</p>
+                  <ul>
+                    <li><a href="">Điều khoản sử dụng</a></li>
+                    <li><a href="">chính sách bảo mật thông tin</a></li>
+                    <li><a href="">Hướng dẫn xuất hóa đơn GTGT</a></li>
+                  </ul>
+                </div>
+                <div class="khac">
+                  <ul class="lienhe">
+
+                    <p><img src="/image/phone-solid.svg" alt="">
+                      Đặt hàng: 1800 6936
+                    </p>
+                    <p><img src="/image/location-dot-solid.svg" alt="">
+                      Liên hệ
+                    </p>
+                  </ul>
+                  <ul class="">
+                    <p>
+                      Tầng 3-4 Hub Building
+                      </p>
+                      <p>
+                        195/10E Điện Biên Phủ, P.15,
+                      </p>
+                      <p>
+                      Q.Bình Thạnh, TP.Hồ Chí Minh    
+                      </p>
+                  </ul>
+                </div>
+              </div>
+              <div class="thongtin">
+                <ul>
+                  <p>
+                    Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN
+                  </p>
+                  <p>
+                    Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp ngày 23/07/2014. Người đại diện: NGÔ NGUYÊN KHA
+                  </p>
+                  <p>
+                    Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3, tp Hồ Chí Minh   Điện thoại: (028) 7107 8079   Email: hi@thecoffeehouse.vn
+                  </p>
+                  <p>
+                    © 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu
+                  </p>
+                </ul>
+              </div>
+            </div>
+</body>
+</html> 
